@@ -168,10 +168,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-11-08 10:57:45 / Modified: 16:24:48" itemprop="dateCreated datePublished" datetime="2020-11-08T10:57:45+08:00">2020-11-08</time>
+              <time title="Created: 2020-11-08 10:57:45" itemprop="dateCreated datePublished" datetime="2020-11-08T10:57:45+08:00">2020-11-08</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-11-11 01:55:11" itemprop="dateModified" datetime="2020-11-11T01:55:11+08:00">2020-11-11</time>
+              </span>
 
           
 
@@ -195,6 +201,9 @@
 <p>1.在mysql 命令行中，输入SELECT * FROM users WHERE id=’1’ LIMIT 0,1；<br>出现error 1046(42000) :No database selected;</p>
 <p>输入use security; //使用这个数据库；<br>再次输入SELECT * FROM users WHERE id=’1’ LIMIT 0,1；<br>后得到输出结果；</p>
 <p>其中limit x,y:<br>x表示下标？哪个开始，y表示几个； </p>
+<p>2.注释符号：<br>    1.–空格 ：注释内容；<br>    2.# 注释内容；<br>    3./* 注释内容 */;</p>
+<p>3.登录时：<br>    cd到 \phpstudy\PHPTutorial\MySQL\bin；<br>    再mysql -u 用户名 -p 回车再输入密码，不然可能会被看到；</p>
+<p>4.order by:<br>   情况：show databases后，use security;<br>             show tables 先查看 select * from users ; //一个最初的？表格；<br>             通过select *from users order by 10(1,2,3,4) 后发现 对最初的表格：<br>             id / username / password 会进行第几列的排序；</p>
 
       
     </div>
