@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="魔术常量1.LINE ：    依赖他在脚本中所处的行来决定；    eg：     2.FILE:    输出文件的 完整路径和文件名； 3.DIR_：    等价于 dirname(_FILE)；    文件所在的目录，若处在被包括的文件中，则返回被包括的文件所在目录； 4.FUNCTION:   所运行的函数名称； 5.CLASS:   类的名称； 6.TRAIT:   代码复用； 7.ME">
+  <meta name="description" content="查库：select schema_name from information_schema.schemata;  2.查表：select table_name from information_schema.tables where table_schema&#x3D;’security’; 3.查列：select column_name from information_schema.columns w">
 <meta property="og:type" content="article">
-<meta property="og:title" content="菜菜鸟鸟的笔记_6">
-<meta property="og:url" content="http://example.com/2020/10/05/%E8%8F%9C%E8%8F%9C%E9%B8%9F%E9%B8%9F%E7%9A%84%E7%AC%94%E8%AE%B0-6/index.html">
+<meta property="og:title" content="mysql简单基本用法">
+<meta property="og:url" content="http://example.com/2020/11/08/mysql%E7%AE%80%E5%8D%95%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="魔术常量1.LINE ：    依赖他在脚本中所处的行来决定；    eg：     2.FILE:    输出文件的 完整路径和文件名； 3.DIR_：    等价于 dirname(_FILE)；    文件所在的目录，若处在被包括的文件中，则返回被包括的文件所在目录； 4.FUNCTION:   所运行的函数名称； 5.CLASS:   类的名称； 6.TRAIT:   代码复用； 7.ME">
+<meta property="og:description" content="查库：select schema_name from information_schema.schemata;  2.查表：select table_name from information_schema.tables where table_schema&#x3D;’security’; 3.查列：select column_name from information_schema.columns w">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-10-05T04:55:49.000Z">
-<meta property="article:modified_time" content="2020-10-05T13:33:54.825Z">
+<meta property="article:published_time" content="2020-11-08T02:57:45.000Z">
+<meta property="article:modified_time" content="2020-11-08T08:24:48.155Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2020/10/05/%E8%8F%9C%E8%8F%9C%E9%B8%9F%E9%B8%9F%E7%9A%84%E7%AC%94%E8%AE%B0-6/">
+<link rel="canonical" href="http://example.com/2020/11/08/mysql%E7%AE%80%E5%8D%95%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>菜菜鸟鸟的笔记_6 | Hexo</title>
+  <title>mysql简单基本用法 | Hexo</title>
   
 
 
@@ -150,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/05/%E8%8F%9C%E8%8F%9C%E9%B8%9F%E9%B8%9F%E7%9A%84%E7%AC%94%E8%AE%B0-6/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/08/mysql%E7%AE%80%E5%8D%95%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          菜菜鸟鸟的笔记_6
+          mysql简单基本用法
         </h1>
 
         <div class="post-meta">
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-10-05 12:55:49 / Modified: 21:33:54" itemprop="dateCreated datePublished" datetime="2020-10-05T12:55:49+08:00">2020-10-05</time>
+              <time title="Created: 2020-11-08 10:57:45 / Modified: 16:24:48" itemprop="dateCreated datePublished" datetime="2020-11-08T10:57:45+08:00">2020-11-08</time>
             </span>
 
           
@@ -188,49 +188,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="魔术常量"><a href="#魔术常量" class="headerlink" title="魔术常量"></a>魔术常量</h2><p>1.<em>LINE</em> ：<br>    依赖他在脚本中所处的行来决定；<br>    eg：<br>    <?php
-    echo " _LINE_";
-    输出则为2；
-    ?></p>
-<p>2.<em>FILE</em>:<br>    输出文件的 完整路径和文件名；</p>
-<p>3.<em>DIR_：<br>    等价于 dirname(_FILE</em>)；<br>    文件所在的目录，若处在被包括的文件中，则返回被包括的文件所在目录；</p>
-<p>4.<em>FUNCTION</em>:<br>   所运行的函数名称；</p>
-<p>5.<em>CLASS</em>:<br>   类的名称；</p>
-<p>6.<em>TRAIT</em>:<br>   代码复用；</p>
-<p>7.<em>METHOD</em>:<br>   返回该方法被定义时的名字；</p>
-<p>8.<em>NAMESPACE</em>;<br>   当前命名空间的名称；</p>
-<hr>
-<h2 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h2><pre><code>可解决：用户编写的代码与PHP内部的类/函数/常量或第三方类/函数/常量之间的名字冲突；
-
-如果一个文件中包含命名空间，它必须在其他所有代码之前声明；
-
-1.一个文件中可以定义不同的命名空间代码，格式最好如下：
-&#123;
-    namespace asd&#123;
-    &#125;
-
-    namespace aaa&#123;
-    &#125;
-&#125;;
-
-2.将全局的非命名空间中的代码与命名空间中的代码组合在一起,为以下格式：
-&#123;
-     namespace aaa&#123;
-     &#125;
-
-     namespace&#123;//全局变量；
-     &#125;
-&#125;
-
-3.在声明命名空间之前唯一合法的代码时用于定义源文件的编码方式的eg：declare(encoding=&#39;UTF-8&#39;)
-若：</code></pre>
-  <html>
-  <?php
-   namespace asd;
-   这样就是错的；
-
-<p>   4.命名空间的名字可以使用分层次的方式定义；<br>  &lt;?php<br>  namespace asd\sb\sbb;<br>  class zxx;</p>
-<p>  zxx就是在asd\sb\sbb下的；</p>
+        <ol>
+<li>查库：select schema_name from information_schema.schemata;</li>
+</ol>
+<p>2.查表：select table_name from information_schema.tables where table_schema=’security’;</p>
+<p>3.查列：select column_name from information_schema.columns where table_name=’users’;</p>
+<p>4.查字段：select username,password from security.users;</p>
+<p>ps：这些是基于最初形态的mysql的那个啥，后续学习后，进行补充；</p>
+<p>less01:</p>
+<p>1.在mysql 命令行中，输入SELECT * FROM users WHERE id=’1’ LIMIT 0,1；<br>出现error 1046(42000) :No database selected;</p>
+<p>输入use security; //使用这个数据库；<br>再次输入SELECT * FROM users WHERE id=’1’ LIMIT 0,1；<br>后得到输出结果；</p>
+<p>其中limit x,y:<br>x表示下标？哪个开始，y表示几个； </p>
 
     </div>
 
@@ -246,13 +214,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/10/05/%E8%8F%9C%E8%8F%9C%E9%B8%9F%E9%B8%9F%E7%9A%84%E7%AC%94%E8%AE%B0-5/" rel="prev" title="菜菜鸟鸟的笔记_5">
-      <i class="fa fa-chevron-left"></i> 菜菜鸟鸟的笔记_5
+    <a href="/2020/11/08/sqli-labs%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E6%97%B6%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98/" rel="prev" title="sqli-labs下载安装时遇见的问题">
+      <i class="fa fa-chevron-left"></i> sqli-labs下载安装时遇见的问题
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/10/05/%E8%8F%9C%E8%8F%9C%E9%B8%9F%E9%B8%9F%E7%9A%84%E7%AC%94%E8%AE%B0-7/" rel="next" title="菜菜鸟鸟的笔记_7">
-      菜菜鸟鸟的笔记_7 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -311,7 +276,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AD%94%E6%9C%AF%E5%B8%B8%E9%87%8F"><span class="nav-number">1.</span> <span class="nav-text">魔术常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="nav-number">2.</span> <span class="nav-text">命名空间</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
