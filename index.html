@@ -176,7 +176,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-11-11 01:55:11" itemprop="dateModified" datetime="2020-11-11T01:55:11+08:00">2020-11-11</time>
+                <time title="Modified: 2020-11-11 20:34:58" itemprop="dateModified" datetime="2020-11-11T20:34:58+08:00">2020-11-11</time>
               </span>
 
           
@@ -191,19 +191,30 @@
 
       
           <ol>
-<li>查库：select schema_name from information_schema.schemata;</li>
+<li><p>查库：select schema_name from information_schema.schemata;</p>
+</li>
+<li><p>查表：select table_name from information_schema.tables where table_schema=’security’;</p>
+</li>
+<li><p>查列：select column_name from information_schema.columns where table_name=’users’;</p>
+</li>
+<li><p>查字段：select username,password from security.users;</p>
+</li>
 </ol>
-<p>2.查表：select table_name from information_schema.tables where table_schema=’security’;</p>
-<p>3.查列：select column_name from information_schema.columns where table_name=’users’;</p>
-<p>4.查字段：select username,password from security.users;</p>
 <p>ps：这些是基于最初形态的mysql的那个啥，后续学习后，进行补充；</p>
+<hr>
 <p>less01:</p>
 <p>1.在mysql 命令行中，输入SELECT * FROM users WHERE id=’1’ LIMIT 0,1；<br>出现error 1046(42000) :No database selected;</p>
 <p>输入use security; //使用这个数据库；<br>再次输入SELECT * FROM users WHERE id=’1’ LIMIT 0,1；<br>后得到输出结果；</p>
 <p>其中limit x,y:<br>x表示下标？哪个开始，y表示几个； </p>
+<hr>
 <p>2.注释符号：<br>    1.–空格 ：注释内容；<br>    2.# 注释内容；<br>    3./* 注释内容 */;</p>
+<hr>
 <p>3.登录时：<br>    cd到 \phpstudy\PHPTutorial\MySQL\bin；<br>    再mysql -u 用户名 -p 回车再输入密码，不然可能会被看到；</p>
-<p>4.order by:<br>   情况：show databases后，use security;<br>             show tables 先查看 select * from users ; //一个最初的？表格；<br>             通过select *from users order by 10(1,2,3,4) 后发现 对最初的表格：<br>             id / username / password 会进行第几列的排序；</p>
+<hr>
+<p>4.order by:<br>   情况：show databases后，use security;<br>             show tables 先查看 select * from users ; //一个最初的？表格；<br>             通过select *from users order by 10(1,2,3,4) 后发现 对最初的表格：<br>             id / username / password 会进行第几列的排序；<br>   然后发现less -1 有3列数据；</p>
+<hr>
+<p>5.union select:<br>   情况:  use security后，先select * from users;<br>            对比以下两种：select * from users limit 1,1 和 select * from users limit 1,1 union select 1,2,3;<br>            发先多了一行 id / username / password 下的 1，2，3；</p>
+<hr>
 
       
     </div>
